@@ -1,10 +1,15 @@
 .home_container {
-    text-align: center;
+    @include flex_col;
     margin-top: 1em;
-    padding: 0.2em 0;
     background-color: map-get($color, cl_gray);
+    @include xs {
+        font-size: 14px;
+    }
     color: map-get($color, cl_white);
     p {
         font-size: map-get($size, h2);
+        @include xs {
+            font-size: 14px;
+        }
     }
 }

@@ -68,13 +68,6 @@ $break-points: (
     }
 }
 
-// Custom devices for height
-@mixin h($height) {
-    @media (height: $height+"px") {
-        @content;
-    }
-}
-
 // Custom devices for width and height
 @mixin wh($width, $height) {
     @media (width: $width+"px") and (height: $height+"px") {
