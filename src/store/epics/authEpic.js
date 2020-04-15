@@ -9,15 +9,15 @@ import { SIGNUP, LOGIN, LOGOUT, IS_LOGGED_IN } from "../constants";
 
 export default class authEpic {
   static signup = (action$) => {
-    return;
+    return action$;
   };
   static login = (action$) => {
-    return;
+    return action$;
   };
   static logout = (action$) => {
-    return;
+    return action$;
   };
   static isLoggedIn = (action$) => {
-    return;
+    return action$;
   };
 }

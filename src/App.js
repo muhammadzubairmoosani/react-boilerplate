@@ -8,7 +8,6 @@ function App() {
       <Router>
         <AppRoutes />
       </Router>
-      {/* <h2>{process.env.pord.REACT_APP_BASE_URL}</h2> */}
     </div>
   );
 }
