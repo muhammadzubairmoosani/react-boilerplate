@@ -1,9 +1,9 @@
-$colors: (
+$color: (
     cl_white: #fff,
     cl_gray: #555,
 );
 
-$font-size: (
+$size: (
     h1: 30px,
     h2: 20px,
 );
@@ -19,7 +19,7 @@ $break-points: (
     screen-xl-min: 1080px,
 );
 
-            //////// will setup font-face
+//////// will setup font-face
 // @font-face {
 //   font-family: "Avenir";
 //   src: url(../../assets/font/Avenir.ttc) format("truetype");
@@ -61,22 +61,29 @@ $break-points: (
     }
 }
 
-// Custom devices for width and height
-@mixin rwd($width, $height) {
-    @media (width: $width+"px") and (height: $height+"px") {
-        @content;
-    }
-}
-
 // Custom devices for width
-@mixin rw($width) {
+@mixin w($width) {
     @media (width: $width+"px") {
         @content;
     }
 }
 
+// Custom devices for height
+@mixin h($height) {
+    @media (height: $height+"px") {
+        @content;
+    }
+}
+
+// Custom devices for width and height
+@mixin wh($width, $height) {
+    @media (width: $width+"px") and (height: $height+"px") {
+        @content;
+    }
+}
+
 // Custom Range for inconvenient sizes
-@mixin customRange($min, $max) {
+@mixin min_n_max($min, $max) {
     @media (min-width: $min+"px") and (max-width: $max+"px") {
         @content;
     }
@@ -89,7 +96,7 @@ $break-points: (
     align-items: center;
 }
 
-@mixin flex_c {
+@mixin flex_col {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;

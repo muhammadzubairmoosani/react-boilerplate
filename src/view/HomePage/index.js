@@ -8,7 +8,7 @@ const Home = () => {
       <h1>
         <FormattedMessage id="general.firstName" defaultMessage="Hello world" />
       </h1>
-      <h2>{process.env.REACT_APP_BASE_URL}</h2>
+      <p>{process.env.REACT_APP_BASE_URL}</p>
     </div>
   );
 };

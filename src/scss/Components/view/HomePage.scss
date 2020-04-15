@@ -1,3 +1,10 @@
 .home_container {
     text-align: center;
+    margin-top: 1em;
+    padding: 0.2em 0;
+    background-color: map-get($color, cl_gray);
+    color: map-get($color, cl_white);
+    p {
+        font-size: map-get($size, h2);
+    }
 }
